@@ -3,6 +3,7 @@ from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
 import os
+import models
 
 # grabs the folder where the script runs
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -25,8 +26,6 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 app = Flask(__name__)
 app.config.from_object(__name__)
 db = SQLAlchemy(app)
-
-import models
 
 
 @app.route('/')
