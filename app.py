@@ -1,5 +1,5 @@
 # imports
-from flask import Flask, request, session, g, redirect, url_for, \
+from flask import Flask, request, session, redirect, url_for, \
      abort, render_template, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
 import os
